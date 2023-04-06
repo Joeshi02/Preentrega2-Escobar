@@ -166,7 +166,7 @@ footer{
     .gridIndex{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto 200px;}
+        grid-template-rows: auto auto auto auto;}
     .novedades, .vehiculos{
         width: 100%;
         height: auto;}
