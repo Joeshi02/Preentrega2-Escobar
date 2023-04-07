@@ -57,6 +57,9 @@ footer{
     flex-direction: row;
     justify-content: space-between;}
 *{margin: 0;}
+.contacto{display: flex;
+flex-direction: row;
+justify-content: flex-end;}
 /* DESKTOP */
 @media (min-width:1023px){
     .gridIndex, .gridMainIndex{
@@ -217,5 +220,5 @@ footer{
     .chaser{
     width: 100%;
     height: auto;}
-    
+    .acomodarRedes{font-size: 22px;}
 }
