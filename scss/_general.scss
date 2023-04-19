@@ -1,0 +1,61 @@
+:root{
+    --bg-principal: cornflowerblue;
+    --text-color: black;
+    --fondo-letras-header: rgba(226, 226, 226, 0.877);}
+header,footer{background-color:var(--bg-principal); position: sticky; top: 0;}
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;}
+.logoRedes{width: 50px; height: 50px;}
+h1,h2,h3,h4,h5,p,.listas{font-family: 'Prompt', sans-serif;;}
+h4{padding:10px}
+.listas{font-size: 20px; padding: 10px;transition: 0.3s all;}
+ul{list-style: none;}
+a{text-decoration: none;color:var(--text-color)}
+.tamañoLogo{
+    width: 170px;
+    height: 70px;}
+.loguitos{ 
+    width: 100px;
+    height: 100px;
+    padding: 5px;}
+.tamañosLogo{ 
+    padding: 0px;
+    margin: 30px;}
+.contactoLogo{display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80px;
+    height: 80px;}
+.telefonoLogo{display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80px;
+    height: 80px;}
+.logoMail{display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80px;
+    height: 80px;}
+.logoFace{display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+width: 80px;
+height: 80px;}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;}
+*{margin: 0;}
+.contacto{display: flex;
+flex-direction: row;
+justify-content: flex-end;}

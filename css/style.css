@@ -1,124 +1,80 @@
 @charset "UTF-8";
-:root {
-  --bg-principal: cornflowerblue;
-  --text-color: black;
-  --fondo-letras-header: rgba(226, 226, 226, 0.877);
+/* MOBILE */
+@media (max-width: 768px) {
+  .gridIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+  }
+  .novedades, .vehiculos {
+    width: 100%;
+    height: auto;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+  }
+  .mainLogos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tamañoNosotros {
+    width: 100%;
+    height: auto;
+  }
+  .ubicarTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .loguitosProductos {
+    width: 100px;
+    height: 100px;
+  }
+  .filaProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .puerto {
+    width: 100%;
+    height: auto;
+  }
+  .ruedas {
+    width: 100%;
+    height: auto;
+  }
+  .logosContacto {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .tamañoForm {
+    width: 350px;
+    height: 50px;
+    margin: 2px;
+  }
+  .chaser {
+    width: 100%;
+    height: auto;
+  }
+  .acomodarRedes {
+    font-size: 22px;
+  }
 }
-
-header, footer {
-  background-color: var(--bg-principal);
-  position: sticky;
-  top: 0;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0px;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logoRedes {
-  width: 50px;
-  height: 50px;
-}
-
-h1, h2, h3, h4, h5, p, .listas {
-  font-family: "Prompt", sans-serif;
-}
-
-h4 {
-  padding: 10px;
-}
-
-.listas {
-  font-size: 20px;
-  padding: 10px;
-  transition: 0.3s all;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-.tamañoLogo {
-  width: 170px;
-  height: 70px;
-}
-
-.loguitos {
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-}
-
-.tamañosLogo {
-  padding: 0px;
-  margin: 30px;
-}
-
-.contactoLogo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 80px;
-  height: 80px;
-}
-
-.telefonoLogo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-}
-
-.logoMail {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 80px;
-  height: 80px;
-}
-
-.logoFace {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 80px;
-  height: 80px;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-* {
-  margin: 0;
-}
-
-.contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
 /* DESKTOP */
 @media (min-width: 1023px) {
   .gridIndex, .gridMainIndex {
@@ -250,81 +206,124 @@ footer {
     border-radius: 30px;
   }
 }
-/* MOBILE */
-@media (max-width: 768px) {
-  .gridIndex {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto;
-  }
-  .novedades, .vehiculos {
-    width: 100%;
-    height: auto;
-  }
-  .menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0px;
-  }
-  .mainLogos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .tamañoNosotros {
-    width: 100%;
-    height: auto;
-  }
-  .ubicarTxt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-  }
-  .loguitosProductos {
-    width: 100px;
-    height: 100px;
-  }
-  .filaProductos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .puerto {
-    width: 100%;
-    height: auto;
-  }
-  .ruedas {
-    width: 100%;
-    height: auto;
-  }
-  .logosContacto {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-  .tamañoForm {
-    width: 350px;
-    height: 50px;
-    margin: 2px;
-  }
-  .chaser {
-    width: 100%;
-    height: auto;
-  }
-  .acomodarRedes {
-    font-size: 22px;
-  }
+:root {
+  --bg-principal: cornflowerblue;
+  --text-color: black;
+  --fondo-letras-header: rgba(226, 226, 226, 0.877);
+}
+
+header, footer {
+  background-color: var(--bg-principal);
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoRedes {
+  width: 50px;
+  height: 50px;
+}
+
+h1, h2, h3, h4, h5, p, .listas {
+  font-family: "Prompt", sans-serif;
+}
+
+h4 {
+  padding: 10px;
+}
+
+.listas {
+  font-size: 20px;
+  padding: 10px;
+  transition: 0.3s all;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.tamañoLogo {
+  width: 170px;
+  height: 70px;
+}
+
+.loguitos {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+.tamañosLogo {
+  padding: 0px;
+  margin: 30px;
+}
+
+.contactoLogo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80px;
+  height: 80px;
+}
+
+.telefonoLogo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+
+.logoMail {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80px;
+  height: 80px;
+}
+
+.logoFace {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80px;
+  height: 80px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
