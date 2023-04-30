@@ -2,7 +2,8 @@
     --bg-principal: cornflowerblue;
     --text-color: black;
     --fondo-letras-header: rgba(226, 226, 226, 0.877);}
-header,footer{background-color:var(--bg-principal); position: sticky; top: 0;}
+header{background-color:var(--bg-principal); position: sticky; top: 0;}
+footer{background-image: linear-gradient(to top, var(--bg-principal), transparent);}
 .menu{
     display: flex;
     flex-direction: row;

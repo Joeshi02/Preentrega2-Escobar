@@ -212,10 +212,14 @@
   --fondo-letras-header: rgba(226, 226, 226, 0.877);
 }
 
-header, footer {
+header {
   background-color: var(--bg-principal);
   position: sticky;
   top: 0;
+}
+
+footer {
+  background-image: linear-gradient(to top, var(--bg-principal), transparent);
 }
 
 .menu {
